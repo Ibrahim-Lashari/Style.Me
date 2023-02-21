@@ -1,54 +1,90 @@
 <!DOCTYPE html>
-    <head>
-        <title>Rudolf Isling</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>Rudolf Ising</h1>
-            </div>
-        </div>
 
-        <div class="row text-center pt-2 customColor-bg">
-            <div class="col-lg-4 bg-dark text-primary">
-                <div class="card">
-                    <img class="card-img-top" src="/images/image-w856.webp" alt="Ising">
-                    <div class="card-body text-danger">
-                      <h5 class="card-title">Life of Rudolf Ising</h5>
-                      <p class="card-text">
-                        <li>Born on August 7, 1903, in Kansas City, Missouri</li>
-                        <li>Hired by Walt Disney in the early twenties</li>
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 bg-dark text-primary">
-                <div class="card">
-                    <img class="card-img-top" src="/images/Bosko.jpg" alt="Bosko">
-                    <div class="card-body text-danger">
-                      <h5 class="card-title">Works of Rudolf Ising</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 bg-dark text-primary">
-                <div class="card">
-                    <img class="card-img-top" src="/images/p_theadventuresofoswaldtheluckyrabbit_20508_942e1a75.webp" alt="Oswald">
-                    <div class="card-body text-danger">
-                      <h5 class="card-title">Style of Rudolf Ising</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<head>
+  <title>Rudolf Ising</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-        <script src="/js/script.js">
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Rudolf Ising</h1>
+    </div>
+  </div>
+<!--- Code -->
+<div class="row text-center pt-2 customColor-bg"></div>
+<div class="row">
+  <div class="col">
+    <div class="accordionPanelTab" id="Life" onclick = "showLife();">Life of Rudolf Ising</div>
+    <div class="accordionPanelContent" id="LifeContent">
+			<div class="row customColor-bg">
+        <div class="col text-center">
+          <div class="border-danger">
+            <img class="text-center" src="image-w856.webp" alt="Ising">
+            <div class="text-danger">
+              <h5 class="font">Life of Rudolf Ising</h5>
+              <div class="font2">
+                <li>Born on August 7, 1903, in Kansas City, Missouri</li>
+                <li>Hired by Walt Disney in the early twenties</li>
+                <li>Married Cynthia Westlake in 1941 and had a son, Rudolf Ising Jr.</li>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordionPanelTab" id="Work" onclick = "showWork();">Works of Rudolf Ising</div>
+    <div class="accordionPanelContent" id="WorkContent">
+			<div class="row customColor-bg">
+        <div class="col text-center">
+          <div class="border-danger">
+            <img class="text-center" src="Bosko.jpg" alt="Bosko">
+            <div class="text-danger">
+              <h5 class="font">Works of Rudolf Ising</h5>
+              <div class="font2">
+                <li>Made Bosko The Talk-ink Kid for Looney Tunes, one of my favorites because of his design and was one of
+                  Ising's first designs</li>
+                <li>Made Oswald the Lucky Rabbit for Universal Pictures</li>
+                <li>Made a cartoon, Puss Gets the Boot. Better known as Tom and Jerry.</li>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordionPanelTab" id="Style" onclick = "showStyle();">Style of Rudolf Ising</div>
+    <div class="accordionPanelContent" id="StyleContent">
+      <div class="row customColor-bg">
+        <div class="col text-center">
+          <div class="border-danger">
+            <img class="text-center" src="p_theadventuresofoswaldtheluckyrabbit_20508_942e1a75.webp" alt="Oswald" width="100px">
+            <div class="text-danger">
+              <h5 class="font">Style of Rudolf Ising</h5>
+              <div class="font2">
+                <li>Ising has a very cartoonish and childish style</li>
+                <li>It fascinates me how random characters he made have branched off into household names like Looney Tunes
+                  and Tom and Jerry</li>
+                <li>I want to try to appeal to people with cartoons, like he does, through websites and technology</li>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- done -->
+<script src="script.js">
 	
-        </script>
-    </body>
+</script>
+</body>
+
 </html>
